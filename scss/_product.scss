@@ -25,7 +25,7 @@
   }
 }
 .product {
-  flex: 0 1 1380px;
+  width: 100%;
   margin-left: 80px;
   margin-top: -65px;
   &__title {
@@ -37,12 +37,14 @@
     height: 41px;
     line-height: 41px;
     font-size: 20px;
-    margin-bottom: 23px;
+    margin-bottom: 13px;
   }
 }
 
 .model {
   display: flex;
+  padding: 10px 0 51px 0;
+  border-bottom: 1px solid black;
   &__info {
     display: flex;
     margin-right: 40px;
@@ -94,8 +96,27 @@
 }
 
 .storage {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  &__section {
+    & + .storage__section {
+      margin-top: 51px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .storage-row-wrapper {
+    display: flex;
+    justify-content: space-between;
+    & + .storage-row-wrapper {
+      margin-top: 18px;
+    }
+  }
+  .param-wrapper {
+    display: flex;
+  }
   .param {
     display: flex;
     flex-direction: column;
@@ -121,7 +142,113 @@
     }
   }
 }
+.param-size-etna {
+  width: 80px !important;
+  height: 50px !important;
+  text-align: center;
+}
+.param-num-etna {
+  width: 80px !important;
+}
 
 .result {
-  margin-left: auto;
+  display: flex;
+  position: relative;
+  &__title {
+    position: absolute;
+    top: -45px;
+    right: 30px;
+    font-family: "Roboto";
+    span {
+      font-size: 12px !important;
+      border: none !important;
+      & + span {
+        margin-left: 20px !important;
+      }
+    }
+  }
+  span {
+    height: 62px;
+    background: #ffffff;
+    border: 0.7px solid #00639e;
+    border-radius: 3px;
+    position: relative;
+    line-height: 62px;
+    font-size: 14px;
+    & + span {
+      margin-left: 5px;
+    }
+  }
+  &__price {
+    padding: 0px 25px 0px 8px;
+    &::before {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 10px;
+      background-image: url("../images/main/rub.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 10px;
+      top: 26px;
+    }
+  }
+  &__sum {
+    padding: 0px 12.63px;
+  }
+  &__sum-price {
+    padding: 0 34px 0 20px;
+    &::before {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 10px;
+      background-image: url("../images/main/rub.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 23px;
+      top: 26px;
+    }
+  }
+}
+
+.result-price-etna,
+.result-sum-etna,
+.result-sum-price-etna {
+  line-height: 80px !important;
+  height: 85px !important;
+}
+.result-price-etna {
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 10px;
+    background-image: url("../images/main/rub.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 12px;
+    top: 36px;
+  }
+}
+.result-sum-price-etna {
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 10px;
+    background-image: url("../images/main/rub.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 22px;
+    top: 36px;
+  }
+}
+
+.storage-row-wrapper.margin {
+  margin-bottom: 9px;
 }
