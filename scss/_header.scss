@@ -1,0 +1,164 @@
+.header {
+  background: #00639e;
+  &__inner {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    font-size: 18px;
+    padding: 0 0 0 120px;
+
+    a {
+      color: #fff;
+      padding: 0px 50px;
+      transition: all 0.2s liear;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .user-nav {
+    display: flex;
+    &__link {
+      display: flex;
+      margin: 0 70px 0 0;
+      &:last-child {
+        margin: 0 0 0 0;
+      }
+      i {
+        display: flex;
+        align-items: center;
+        margin-right: 7px;
+      }
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1601px) {
+  .header {
+    &__nav {
+      font-size: 16px;
+      a {
+        padding: 0px 30px;
+      }
+    }
+    .user-nav {
+      &__link {
+        margin: 0 50px 0 0;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1401px) {
+  .header {
+    &__nav {
+      display: flex;
+      padding: 0 0 0 111px;
+
+      a {
+        padding: 0px 25px;
+      }
+    }
+    .user-nav {
+      &__link {
+        margin: 0 25px 0 0;
+      }
+    }
+  }
+}
+@media (max-width: 1201px) {
+  .header {
+    &__nav {
+      font-size: 14px;
+      padding: 0 0 0 125px;
+
+      a {
+        padding: 0px 10px;
+      }
+    }
+    .user-nav {
+      display: flex;
+      &__link {
+        margin: 0 15px 0 0;
+        align-items: center;
+        i {
+          margin-right: 7px;
+          img {
+            width: 17px;
+          }
+        }
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .header {
+    &__inner {
+      height: auto;
+      flex-direction: column;
+    }
+    &__nav {
+      font-size: 18px;
+      padding: 20px 0 20px 0px;
+
+      a {
+        padding: 0px 15px;
+      }
+    }
+    .user-nav {
+      padding: 20px 0px 20px 0px;
+      &__link {
+        margin: 0 34px 0 0;
+        &:last-child {
+          margin: 0 0 0 0;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 481px) {
+  .header {
+    background: #00639e;
+    &__inner {
+      align-items: flex-start;
+    }
+
+    &__nav {
+      flex-direction: column;
+      padding: 10px 0 10px 0;
+      a {
+        padding: 5px 0 5px 0;
+      }
+    }
+    .user-nav {
+      padding: 0 0 20px 0;
+      flex-direction: column;
+      &__link {
+        margin: 0 0 0 0;
+        padding: 5px 0 5px 0;
+        a {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

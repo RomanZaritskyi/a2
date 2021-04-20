@@ -1,0 +1,252 @@
+.topline {
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 84px;
+  }
+  &__logo {
+    margin: 0 21px 0 0;
+
+    img {
+      width: 150px;
+    }
+  }
+  &__title {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0 166px 0 0;
+  }
+  &__search {
+    display: flex;
+    margin: 0 172px 0 0;
+    position: relative;
+
+    input {
+      border: 1px solid rgba(0, 99, 158, 0.8);
+      border-radius: 5px;
+      background: transparent;
+      width: 470px;
+      height: 40px;
+      padding: 0px 62px 0px 30px;
+    }
+    .search-btn {
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 63px;
+      height: 40px;
+      right: 0px;
+      top: 0px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(0, 99, 158, 0.3);
+      }
+    }
+  }
+  &__contact {
+    margin: 0 58px 0 0;
+    display: flex;
+    i {
+      display: flex;
+    }
+    a {
+      color: #000;
+      display: flex;
+      padding: 0px 13px;
+    }
+  }
+  &__call {
+    background: #00639e;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    height: 50px;
+    width: 190px;
+  }
+}
+
+@media (max-width: 1815px) {
+  .topline {
+    &__title {
+      margin: 0 100px 0 0;
+    }
+
+    &__search {
+      margin: 0 80px 0 0;
+      input {
+        width: 418px;
+        padding: 0px 62px 0px 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1601px) {
+  .topline {
+    &__title {
+      font-size: 16px;
+      margin: 0 80px 0 0;
+    }
+
+    &__search {
+      margin: 0 85px 0 0;
+      input {
+        width: 350px;
+        padding: 0px 33px 0px 30px;
+      }
+      .search-btn {
+        right: 0px;
+        width: 37px;
+      }
+    }
+
+    &__contact {
+      margin: 0 42px 0 0;
+      i {
+        img {
+          width: 15px;
+        }
+      }
+    }
+    &__call {
+      width: 170px;
+    }
+  }
+}
+@media (max-width: 1401px) {
+  .topline {
+    &__logo {
+      margin: 0 10px 0 0;
+
+      img {
+        width: 125px;
+      }
+    }
+    &__title {
+      margin: 0 47px 0 0;
+    }
+
+    &__search {
+      margin: 0 30px 0 0px;
+      input {
+        width: 296px;
+        padding: 0px 28px 0px 8px;
+      }
+      .search-btn {
+        right: 0px;
+        width: 30px;
+      }
+    }
+
+    &__contact {
+      margin: 0 20px 0 0;
+    }
+    &__call {
+      width: 170px;
+    }
+  }
+}
+@media (max-width: 1201px) {
+  .topline {
+    &__title {
+      margin: 0 20px 0 0;
+    }
+    &__search {
+      width: 239px;
+      margin: 0 22px 0 0;
+    }
+    &__contact {
+      margin: 0 20px 0 0;
+      a {
+        display: flex;
+        padding: 0px 5px;
+      }
+    }
+    &__call {
+      height: 45px;
+      width: 118px;
+      line-height: 15px;
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .topline {
+    padding: 20px 0;
+    &__inner {
+      height: auto;
+      flex-direction: column;
+    }
+    &__logo {
+      margin: 0 0 10px 0;
+      img {
+        width: 220px;
+      }
+    }
+    &__title {
+      font-size: 30px;
+      margin: 0 0 20px 0;
+      line-height: 30px;
+    }
+
+    &__search {
+      height: 40px;
+      margin: 0 0 20px 0;
+      width: 450px;
+
+      input {
+        width: 100%;
+        padding: 0px 60px 0px 8px;
+      }
+      .search-btn {
+        width: 60px;
+      }
+    }
+    &__contact {
+      margin: 0 0 10px 0;
+      display: flex;
+      a {
+        padding: 0px 13px;
+      }
+    }
+    &__call {
+      height: 50px;
+      width: 190px;
+    }
+  }
+}
+@media (max-width: 481px) {
+  .topline {
+    &__title {
+      font-size: 27px;
+      margin: 0 0 20px 0;
+    }
+
+    &__search {
+      height: 40px;
+      margin: 0 0 20px 0;
+      width: 290px;
+
+      input {
+        width: 100%;
+        padding: 0px -1px 0px 8px;
+      }
+    }
+    &__contact {
+      margin: 0 0 10px 0;
+      display: flex;
+      font-size: 12px;
+
+      a {
+        padding: 0px 13px;
+      }
+    }
+    &__call {
+      height: 50px;
+      width: 190px;
+    }
+  }
+}
