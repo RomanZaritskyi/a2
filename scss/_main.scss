@@ -30,3 +30,38 @@
     }
   }
 }
+
+// basket-error styles
+.b-basket-error {
+  margin-bottom: 10px;
+}
+
+.basket-error {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 18px;
+  span {
+    color: rgba(255, 0, 0, 1);
+    & + span {
+      margin-top: 15px;
+    }
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 15px;
+      background-image: url("../images/main/rub-red.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: 6px;
+    }
+  }
+  &__text-bold {
+    font-weight: 600;
+  }
+}
