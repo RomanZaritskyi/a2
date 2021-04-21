@@ -45,6 +45,10 @@
   display: flex;
   padding: 10px 0 51px 0;
   border-bottom: 1px solid black;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 63px;
+  }
   &__info {
     display: flex;
     margin-right: 40px;
@@ -251,4 +255,9 @@
 
 .storage-row-wrapper.margin {
   margin-bottom: 9px;
+}
+
+// Not registered styles
+.product-notreg {
+  margin-top: 0;
 }
