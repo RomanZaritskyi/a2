@@ -23,6 +23,20 @@
     border-radius: 5px;
     color: #fff;
   }
+  &__clean-basket {
+    margin-left: auto;
+    font-size: 18px;
+    padding: 0px 16px 0px 9px;
+    border: 1px solid #00639e;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 5px;
+    color: #000;
+  }
+}
+// button styles
+.button-basket {
+  margin-bottom: 42px;
 }
 .product {
   width: 100%;
@@ -39,6 +53,9 @@
     font-size: 20px;
     margin-bottom: 13px;
   }
+}
+.product-basket {
+  margin-left: 117px;
 }
 
 .model {
@@ -97,6 +114,64 @@
     font-size: 14px;
     line-height: 16px;
   }
+}
+
+// Basket styles
+.model-border-wrapper {
+  border: 1px solid #00639e;
+  border-radius: 10px;
+  padding: 18px 60px 0px 45px;
+}
+.model__basket-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-bottom: 18px;
+  .title-logo {
+    width: 132px;
+    margin-right: 27%;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+  .dell-brand-btn {
+    padding: 0px 20px 0px 20px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #00639e;
+    border-radius: 5px;
+    span {
+      display: inline-block;
+      padding-right: 30px;
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 18.5px;
+        height: 21px;
+        background-image: url("../images/BASKET/remove-basket.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+.model__info-basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.model__photo-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.basket-photo {
+  width: 185px;
 }
 
 .storage {
