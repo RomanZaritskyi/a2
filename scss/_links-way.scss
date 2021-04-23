@@ -5,10 +5,12 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
   &__link {
     display: flex;
     align-items: center;
+
     a {
       color: black;
       &:hover {
@@ -25,10 +27,6 @@
       margin: 0px 17px;
     }
   }
-}
-// bsaket styles
-.basket-links-way {
-  margin-bottom: 17px;
 }
 
 @media (max-width: 1601px) {
@@ -66,10 +64,6 @@
   .links-way {
     &__nav {
       padding: 15px 0px;
-    }
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
     }
     &__link {
       display: flex;

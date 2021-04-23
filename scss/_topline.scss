@@ -67,6 +67,10 @@
     color: #fff;
     height: 50px;
     width: 190px;
+    transition: all 0.1s linear;
+    &:hover {
+      background: #006699bd;
+    }
   }
 }
 

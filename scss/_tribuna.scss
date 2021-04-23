@@ -1,16 +1,32 @@
 .tribuna-model {
   padding: 0;
+  margin-bottom: 116px;
+  border-bottom: none;
 }
 .tribuna-info {
   flex-direction: column;
   margin-right: 62px;
+  @media (max-width: 1401px) {
+    margin-right: 5px;
+  }
 }
 .product-tribuna-mr {
   margin-top: 0;
   margin-left: 100px;
+  @media (max-width: 1401px) {
+    margin-left: 36px;
+  }
 }
 .tribuna-model-ph {
   margin-right: 0;
+  @media (max-width: 1025px) {
+    display: flex;
+  }
+}
+.tribuna-pg-wrapper {
+  @media (max-width: 1025px) {
+    margin-right: 20px;
+  }
 }
 .tribuna-ph-wd {
   width: 537px;
@@ -30,6 +46,15 @@
   max-width: 495px;
   font-size: 18px;
   line-height: 25px;
+  @media (max-width: 1401px) {
+    max-width: 400px;
+  }
+  @media (max-width: 1201px) {
+    max-width: 300px;
+  }
+  @media (max-width: 1025px) {
+    max-width: 100%;
+  }
 
   color: #000000;
   .brand {
@@ -42,21 +67,35 @@
   }
   p {
     margin-bottom: 32px;
+    @media (max-width: 1025px) {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
   .model__content-link {
     display: block;
     color: rgba(0, 99, 158, 1);
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
     &:hover {
       text-decoration: underline;
     }
     & + .model__content-link {
       margin-top: 15px;
+      @media (max-width: 767px) {
+        margin-top: 10px;
+      }
     }
   }
 }
 
 .tribuna-storage {
   margin-top: -32px;
+  @media (max-width: 1025px) {
+    margin-top: 10px;
+  }
 }
 .storage {
   &__name {
@@ -75,8 +114,14 @@
     .vendor {
       span {
         font-size: 20px;
+        @media (max-width: 1401px) {
+          display: block;
+        }
         & + span {
           margin-left: 15px;
+          @media (max-width: 1401px) {
+            margin-left: 0px;
+          }
         }
         b {
           font-size: 22px;
@@ -111,5 +156,45 @@
     display: inline-block;
     padding: 0px 21px;
     height: 50px;
+  }
+}
+
+.add-complect {
+  margin-bottom: 120px;
+
+  &__title {
+    margin-bottom: 40px;
+    h3 {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 34px;
+    }
+  }
+
+  &__photo-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.photo-col {
+  flex: 0 0 230px;
+  margin-right: 85px;
+  @media (max-width: 1401px) {
+    flex: 0 0 170px;
+    margin-right: 45px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__link {
+    a {
+      font-size: 18px;
+      line-height: 20px;
+      color: black;
+    }
   }
 }
